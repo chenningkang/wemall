@@ -20,6 +20,12 @@
 <script>
 //返回当前页面高度
 function order_pay(){
+	//首先来选择银行
+	   if(selectId.value==0){
+			alert("请你选择银行，谢谢。");			
+			return false;
+	   }
+	
   var h=document.body.clientHeight;
   var top= document.documentElement.scrollTop;
   top=top+(h-top)/2;

@@ -2039,7 +2039,7 @@ public class PayViewAction {
     @RequestMapping({"/chinabanks_return.htm"})
     public ModelAndView chinabanks_return(HttpServletRequest request, HttpServletResponse response)
     throws Exception {
-        ModelAndView mv = new JModelAndView("order_finishs.html",
+        ModelAndView mv = new JModelAndView("order_finish.html",
                                             this.configService.getSysConfig(),
                                             this.userConfigService.getUserConfig(), 1, request, response);
       //  String remark1 = request.getParameter("remark1");
